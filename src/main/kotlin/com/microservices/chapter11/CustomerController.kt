@@ -10,7 +10,8 @@ class CustomerController {
     companion object {
         val initialCustomers = arrayOf(Customer(1, "Kotlin"),
                 Customer(2, "Spring"),
-                Customer(3, "Microservice"))
+                Customer(3, "Microservice"),
+                Customer(4, "OpenShift"))
         val customers = ConcurrentHashMap<Int, Customer>(initialCustomers.associateBy(Customer::id))
     }
 
